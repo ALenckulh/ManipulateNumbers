@@ -1,0 +1,10 @@
+import sqlite3
+
+conn = sqlite3.connect('database.db')
+print("Connected to database successfully")
+
+conn.execute('''CREATE TABLE vetores
+             (id INTEGER PRIMARY KEY AUTOINCREMENT,
+              vetorAleatorio TEXT)''')
+
+conn.close()
